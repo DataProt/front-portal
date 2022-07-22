@@ -11,10 +11,17 @@ name: ESLint
 
 on:
   push:
+<<<<<<< HEAD
+    branches: [ "master" , "auth"]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "master" , "auth"]
+=======
     branches: [ "master" ]
   pull_request:
     # The branches below must be a subset of the branches above
     branches: [ "master" ]
+>>>>>>> b80bb47938ef916c71b994b36f9b80560e01f24b
   schedule:
     - cron: '31 15 * * 0'
 
@@ -47,3 +54,7 @@ jobs:
         with:
           sarif_file: eslint-results.sarif
           wait-for-processing: true
+<<<<<<< HEAD
+
+=======
+>>>>>>> b80bb47938ef916c71b994b36f9b80560e01f24b
