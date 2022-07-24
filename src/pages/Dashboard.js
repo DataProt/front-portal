@@ -1,12 +1,94 @@
 import React, { Component } from 'react';
+import { Budget } from '../components/Budget';
 import Navbartop from '../components/Navbartop';
+import LatestOrders from '../components/Table';
+import { TasksProgress } from '../components/tasks-progress';
+import { TotalCustomers } from '../components/total-customers';
+import { TotalProfit } from '../components/total-profit';
+import { Sales } from '../components/Sales';
+import { TrafficByDevice } from '../components/traffic-by-device';
+import { Box, Container, Grid } from '@mui/material';
+
 
 class Dashboard extends Component {
     render() {
         return (
             <div>
                 <Navbartop></Navbartop>
-                <a>dashboard task</a>
+                <Container maxWidth={false}>
+                    <Grid
+                        container
+                        spacing={3}
+                    >
+
+
+                        <Grid
+                            item
+                            lg={3}
+                            sm={6}
+                            xl={3}
+                            xs={12}
+                        >
+                            <Budget />
+                        </Grid>
+                        <Grid
+                            item
+                            xl={3}
+                            lg={3}
+                            sm={6}
+                            xs={12}
+                        >
+                            <TotalCustomers />
+                        </Grid>
+                        <Grid
+                            item
+                            xl={3}
+                            lg={3}
+                            sm={6}
+                            xs={12}
+                        >
+                            <TasksProgress />
+                        </Grid>
+                        <Grid
+                            item
+                            xl={3}
+                            lg={3}
+                            sm={6}
+                            xs={12}
+                        >
+                            <TotalProfit sx={{ height: '100%' }} />
+                        </Grid>
+                        <Grid
+                            item
+                            lg={8}
+                            md={12}
+                            xl={9}
+                            xs={12}
+                        >
+                            <Sales />
+                        </Grid>
+
+                        <Grid
+                            item
+                            lg={4}
+                            md={6}
+                            xl={3}
+                            xs={12}
+                        >
+                            <TrafficByDevice sx={{ height: '100%' }} />
+                        </Grid>
+                        <Grid
+                            item
+                            lg={8}
+                            md={12}
+                            xl={12}
+                            xs={12}
+                        >
+                            <LatestOrders />
+                        </Grid>
+                    </Grid>
+                </Container>
+
             </div>
         );
     }
