@@ -24,7 +24,7 @@ function Navbartop() {
                         >
                             <Offcanvas.Header closeButton>
                                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} style={{ 'margin-left': '200px' }}>
-                                  
+
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>

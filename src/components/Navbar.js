@@ -25,7 +25,7 @@ export default function Navbar() {
     const { currentUser } = useContext(UserContext);
     return (
       <>
-        <button onClick={logOut} className="btn btn-danger ms-2" style={{ 'right': '80px', 'top': '8px', 'position': 'absolute', 'z-index': '5' }}>Log Out</button>
+        <button onClick={logOut} className="btn btn-danger ms-2" style={{ 'right': '80px', 'top': '8px', 'position': 'absolute', zIndex: '5' }}>Log Out</button>
       </>)
   }
   else {
