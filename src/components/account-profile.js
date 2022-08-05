@@ -15,7 +15,7 @@ const user = {
   city: 'Casablanca',
   country: 'MAR',
   jobTitle: 'sigma Developer',
-  name: 'Anis Mesmouki',
+  name: 'Mohamed franky',
   timezone: 'GTM'
 };
 
