@@ -28,9 +28,9 @@ const states = [
 
 export const AccountProfileDetails = (props) => {
   const [values, setValues] = useState({
-    firstName: 'anis',
-    lastName: 'mesmouki',
-    email: 'amesmouki@dataprotect.ma',
+    firstName: 'mohamed',
+    lastName: 'fransky',
+    email: 'mfranky@dataprotect.ma',
     phone: '',
     state: 'Casablanca',
     country: 'MAR'
